@@ -12,10 +12,13 @@ $(function(){
     $("input").addClass("error")
   });
 
+  $("input").on('click', function() {
+    $("input").removeClass("error")
+  });
+
 });
 
 
-// 4. When the user puts their cursor in one of the input fields, remove the `.error` class from both input elements
 // 5. Now only remove the `.error` class from an individual `<input>` when the cursor enters it
 // 6. (Advanced) Allow the user to click the `.modal` to close itself
 //   - Consider what happens when two elements that are overlapping are both waiting for a click: Click events will "bubble" (propagate) up the DOM tree. How could we stop an event from triggering on it's parents?
