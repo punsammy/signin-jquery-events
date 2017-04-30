@@ -13,8 +13,10 @@ $(function(){
   });
 
   $("input").on('click', function() {
-    $("input").removeClass("error")
+    // $("input").removeClass("error")
+    $(this).removeClass("error")
   });
+
 
 });
 
