@@ -8,10 +8,13 @@ $(function(){
     $(".modal").fadeOut("slow")
   });
 
+  $("button.submit").on('click', function(){
+    $("input").addClass("error")
+  });
+
 });
 
 
-// 3. When the user clicks the `.submit` button, add an `.error` class to both `<input>` elements
 // 4. When the user puts their cursor in one of the input fields, remove the `.error` class from both input elements
 // 5. Now only remove the `.error` class from an individual `<input>` when the cursor enters it
 // 6. (Advanced) Allow the user to click the `.modal` to close itself
